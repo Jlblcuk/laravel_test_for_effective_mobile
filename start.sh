@@ -1,6 +1,14 @@
 #!/bin/bash
 set -e
 
+# Удаляем origin только если это Git-репозиторий
+if [ -d .git ]; then
+    if git remote | grep -q "^origin$"; then
+        echo "🗑️ Removing existing Git remote 'origin'..."
+        git remote remove origin
+    fi
+fi
+
 echo "🚀 Starting Laravel Docker project..."
 
 # Determine if we should use 'docker-compose' or 'docker compose'
