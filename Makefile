@@ -11,14 +11,14 @@ endif
 .PHONY: up down build shell install migrate help
 
 help:
-	@echo "Доступные команды:"
-	@echo "  make up       - Запустить контейнеры в фоновом режиме"
-	@echo "  make down     - Остановить и удалить контейнеры"
-	@echo "  make build    - Собрать контейнеры"
-	@echo "  make shell    - Войти в консоль контейнера приложения"
-	@echo "  make install  - Запустить скрипт первоначальной настройки (start.sh)"
-	@echo "  make migrate  - Запустить миграции базы данных"
-	@echo "  make test     - Запустить тесты"
+	@echo "Commands:"
+	@echo "  make up       - Run containers"
+	@echo "  make down     - Stop and delete containers"
+	@echo "  make build    - Build containers"
+	@echo "  make shell    - Enter console containers"
+	@echo "  make install  - Run bash-script first settings (start.sh)"
+	@echo "  make migrate  - Run migrate db"
+	@echo "  make test     - Run tests"
 
 up:
 	$(DOCKER_COMPOSE) up -d
