@@ -14,9 +14,13 @@
 ##  Быстрый запуск
 
 ```bash
-git clone <this-repo>
-cd <project-folder>
+git clone https://github.com/Jlblcuk/start_php8.2-Laravel12-MySQL8.git
+cd start_php8.2-Laravel12-MySQL8
 ./start.sh
+```
+или
+```bash
+make install
 ```
 
 Laravel будет доступен по: [http://localhost](http://localhost)
