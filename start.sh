@@ -18,6 +18,11 @@ else
     DOCKER_COMPOSE="docker compose"
 fi
 
+# Переименовываем README.md в резервную копию
+if [ -f README.md ]; then
+    mv README.md README.md.bak
+    echo "📄 Renamed README.md → README.md.bak"
+fi
 
 # 1. Создаём .env из примера, если его нет
 if [ ! -f .env ]; then
