@@ -1,10 +1,10 @@
 # Установка и запуск проекта
 
 ```bash
-git clone https://github.com/Jlblcuk/start_php8.2-Laravel12-MySQL8
+git clone https://github.com/Jlblcuk/laravel_test_for_effective_mobile
 ```
 ```bash
-cd start_php8.2-Laravel12-MySQL8
+cd laravel_test_for_effective_mobile
 ```
 ```bash
 make install
