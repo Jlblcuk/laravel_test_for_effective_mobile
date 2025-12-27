@@ -56,8 +56,8 @@ until $DOCKER_COMPOSE exec -T db mysql -u "$DB_USERNAME" -p"$DB_PASSWORD" -e "SE
 done
 echo "MySQL is ready"
 
-# Устанавливаем зависимости (если vendor/ отсутствует)
-if [ ! -d "src/vendor" ]; then
+# Устанавливаем зависимости, если vendor/autoload.php отсутствует
+if ! $DOCKER_COMPOSE exec -T app test -f /var/www/vendor/autoload.php; then
     echo "Installing Composer dependencies..."
     $DOCKER_COMPOSE exec -T app composer install --no-interaction --prefer-dist --optimize-autoloader
 fi
