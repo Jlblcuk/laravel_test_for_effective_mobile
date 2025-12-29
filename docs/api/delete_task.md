@@ -9,7 +9,7 @@ http://localhost/api/tasks/3
 **json-коллекция всех запросов**  
 [Tasks_CRUD_API.postman_collection.json](Tasks_CRUD_API.postman_collection.json)
 
-**json-коллекция PUT-запроса:**
+**json-коллекция DELETE-запроса:**
 
 ```json
 {
