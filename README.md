@@ -1,22 +1,25 @@
-# Laravel Docker Starter
+# API
+Все точки доступны по префиксу /api.
 
-Минимальная Docker-сборка для быстрого старта Laravel-проекта.  
-
----
-
-##  Требования
-
-- [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-
----
-
-##  Быстрый запуск
-
----
 
 **Для инициализации проекта см.:** [docs/init.md](docs/init.md)
 
 ---
 
-Laravel будет доступен по: [http://localhost](http://localhost)
+**Коллекция GET-запроса см.:** [docs/api/all_tasks.md](docs/api/all_tasks.md)
+
+---
+
+**Коллекция GET-запроса см.:** [docs/api/single_task.md](docs/api/single_task.md)
+
+---
+
+**Коллекция POST-запроса см.:** [docs/api/create_task.md](docs/api/create_task.md)
+
+---
+
+**Коллекция PUT-запроса см.:** [docs/api/update_task.md](docs/api/update_task.md)
+
+---
+
+**Коллекция DELETE-запроса см.:** [docs/api/delete_task.md](docs/api/delete_task.md)
